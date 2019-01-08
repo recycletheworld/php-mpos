@@ -27,15 +27,15 @@ $config['check_valid_coinaddress'] = true;
  *   https://github.com/MPOS/php-mpos/wiki/Config-Setup#defines--salts
  */
 $config['DEBUG'] = 0;
-$config['SALT'] = 'PLEASEMAKEMESOMETHINGRANDOM';
-$config['SALTY'] = 'THISSHOULDALSOBERRAANNDDOOM';
+$config['SALT'] = 'Ch1No-13817d55f73da7';
+$config['SALTY'] = 'Ch1No-199020b13817d55f';
 
 /**
   * Coin Algorithm
   *  Algorithm used by this coin, sha256d or scrypt
   *   https://github.com/MPOS/php-mpos/wiki/Config-Setup#algorithm
   **/
-$config['algorithm'] = 'scrypt';
+$config['algorithm'] = 'x11';
 
 /**
   * Getbalance API Calls
@@ -50,8 +50,8 @@ $config['getbalancewithunconfirmed'] = true;
  *   https://github.com/MPOS/php-mpos/wiki/Config-Setup#database-configuration
  **/
 $config['db']['host'] = 'localhost';
-$config['db']['user'] = 'someuser';
-$config['db']['pass'] = 'somepass';
+$config['db']['user'] = 'root';
+$config['db']['pass'] = '5y5t3mD3v';
 $config['db']['port'] = 3306;
 $config['db']['name'] = 'mpos';
 // Disabled by default and set in bootstrap if unset, but left in here so
@@ -66,8 +66,8 @@ $config['db']['name'] = 'mpos';
 **/
 $config['db-ro']['enabled'] = false;
 $config['db-ro']['host'] = 'localhost';
-$config['db-ro']['user'] = 'someuser';
-$config['db-ro']['pass'] = 'somepass';
+$config['db-ro']['user'] = 'root';
+$config['db-ro']['pass'] = '5y5t3mD3v';
 $config['db-ro']['port'] = 3306;
 $config['db-ro']['name'] = 'mpos';
 
@@ -78,9 +78,9 @@ $config['db-ro']['name'] = 'mpos';
  *   https://github.com/MPOS/php-mpos/wiki/Config-Setup#local-wallet-rpc
  **/
 $config['wallet']['type'] = 'http';
-$config['wallet']['host'] = 'localhost:19334';
-$config['wallet']['username'] = 'testnet';
-$config['wallet']['password'] = 'testnet';
+$config['wallet']['host'] = 'localhost:40102';
+$config['wallet']['username'] = 'pool-rtw';
+$config['wallet']['password'] = 'Ch1No-199020b13817d55f';
 
 /**
  * Swiftmailer configuration
@@ -90,7 +90,7 @@ $config['wallet']['password'] = 'testnet';
 $config['swiftmailer']['type'] = 'sendmail';
 $config['swiftmailer']['sendmail']['path'] = '/usr/sbin/sendmail';
 $config['swiftmailer']['sendmail']['options'] = '-bs';
-$config['swiftmailer']['smtp']['host'] = 'your.mail-relay.com';
+$config['swiftmailer']['smtp']['host'] = 'pool.rtw';
 $config['swiftmailer']['smtp']['port'] = '587';
 $config['swiftmailer']['smtp']['encryption'] = 'tls';
 $config['swiftmailer']['smtp']['username'] = '';
@@ -102,8 +102,8 @@ $config['swiftmailer']['smtp']['throttle'] = 100;
  *  Shown to users in the 'Getting Started' section
  *   https://github.com/MPOS/php-mpos/wiki/Config-Setup#getting-started
  **/
-$config['gettingstarted']['coinname'] = 'Litecoin';
-$config['gettingstarted']['coinurl'] = 'http://www.litecoin.org';
+$config['gettingstarted']['coinname'] = 'Recycle';
+$config['gettingstarted']['coinurl'] = 'http://rtwcoin.com';
 $config['gettingstarted']['stratumurl'] = '';
 $config['gettingstarted']['stratumport'] = '3333';
 
@@ -151,7 +151,7 @@ $config['accounts']['invitations']['count'] = 5;
  *  Shorthand name for the currency
  *   https://github.com/MPOS/php-mpos/wiki/Config-Setup#currency
  */
-$config['currency'] = 'LTC';
+$config['currency'] = 'RTW';
 
 /**
  * Coin Target
