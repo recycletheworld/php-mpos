@@ -104,7 +104,7 @@ $config['swiftmailer']['smtp']['throttle'] = 100;
  **/
 $config['gettingstarted']['coinname'] = 'Recycle';
 $config['gettingstarted']['coinurl'] = 'http://rtwcoin.com';
-$config['gettingstarted']['stratumurl'] = '';
+$config['gettingstarted']['stratumurl'] = 'http://rtwcoin.com';
 $config['gettingstarted']['stratumport'] = '3333';
 
 /**
@@ -254,22 +254,22 @@ $config['difficulty'] = 20;
  *   https://github.com/MPOS/php-mpos/wiki/Config-Setup#reward-settings
  **/
 $config['reward_type'] = 'block';
-$config['reward'] = 50;
+$config['reward'] = 10;
 
 /**
  * Confirmations
  *  Credit and Network confirmation settings
  *   https://github.com/MPOS/php-mpos/wiki/Config-Setup#confirmations
  */
-$config['confirmations'] = 120;
-$config['network_confirmations'] = 120;
+$config['confirmations'] = 60;
+$config['network_confirmations'] = 60;
 
 /**
  * PPS
  *  Pay Per Share configuration details
  *   https://github.com/MPOS/php-mpos/wiki/Config-Setup#pps-settings
  **/
-$config['pps']['reward']['default'] = 50;
+$config['pps']['reward']['default'] = 5;
 $config['pps']['reward']['type'] = 'blockavg';
 $config['pps']['blockavg']['blockcount'] = 10;
 
