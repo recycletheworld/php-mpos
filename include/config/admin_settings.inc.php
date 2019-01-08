@@ -51,14 +51,14 @@ $aSettings['website'][] = array(
 $aSettings['website'][] = array(
   'display' => 'Website Slogan', 'type' => 'text',
   'size' => 25,
-  'default' => 'Resistance is Futile',
+  'default' => 'Mining Eco Friendly',
   'name' => 'website_slogan', 'value' => $setting->getValue('website_slogan'),
   'tooltip' => 'The slogan of you pool page, displayed in the browser window header.'
 );
 $aSettings['website'][] = array(
   'display' => 'Website e-mail', 'type' => 'text',
   'size' => 25,
-  'default' => 'test@example.com',
+  'default' => 'support@nur1labs.net',
   'name' => 'website_email', 'value' => $setting->getValue('website_email'),
   'tooltip' => 'The email address for your pool, used in mail templates and notifications.'
 );
@@ -114,7 +114,7 @@ $aSettings['blockchain'][] = array(
 $aSettings['blockchain'][] = array(
   'display' => 'Blockexplorer URL', 'type' => 'text',
   'size' => 50,
-  'default' => 'http://explorer.litecoin.net/block/',
+  'default' => 'https://explorer.rtwcoin.com/block/',
   'name' => 'website_blockexplorer_url', 'value' => $setting->getValue('website_blockexplorer_url'),
   'tooltip' => 'URL to the blockexplorer website for your blockchain. Will append the blockhash to the URL. Leave empty to disabled this.'
 );
@@ -128,7 +128,7 @@ $aSettings['blockchain'][] = array(
 $aSettings['blockchain'][] = array(
   'display' => 'Transactionexplorer URL', 'type' => 'text',
   'size' => 50,
-  'default' => 'http://explorer.litecoin.net/tx/',
+  'default' => 'https://explorer.rtwcoin.com/tx/',
   'name' => 'website_transactionexplorer_url', 'value' => $setting->getValue('website_transactionexplorer_url'),
   'tooltip' => 'URL to the transactionexplorer website for your blockchain. Will append the transactionid to the URL. Leave empty to disabled this.'
 );
