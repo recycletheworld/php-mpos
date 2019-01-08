@@ -16,14 +16,14 @@ $aSettings['website'][] = array(
   'display' => 'Message of the Day', 'type' => 'textarea',
   'size' => 20,
   'height' => 3,
-  'default' => '',
+  'default' => 'Gain Effort by Work Hard',
   'name' => 'system_motd', 'value' => $setting->getValue('system_motd'),
   'tooltip' => 'Display a message of the day as information popup if set.'
 );
 $aSettings['website'][] = array(
   'display' => 'MOTD Style', 'type' => 'select',
   'options' => array( 0 => 'Success', 1 => 'Information', 2 => 'Warning', 3 => 'Danger' ),
-  'default' => 0,
+  'default' => 1,
   'name' => 'system_motd_style', 'value' => $setting->getValue('system_motd_style'),
   'tooltip' => 'Set the Style what MOTD looks like.'
 );
@@ -44,7 +44,7 @@ $aSettings['website'][] = array(
 $aSettings['website'][] = array(
   'display' => 'Website Title', 'type' => 'text',
   'size' => 25,
-  'default' => 'The Pool - Mining Evolved',
+  'default' => 'Welcome To Our Mining Pool',
   'name' => 'website_title', 'value' => $setting->getValue('website_title'),
   'tooltip' => 'The title of you pool page, displayed in the browser window header.'
 );
@@ -100,7 +100,7 @@ $aSettings['website'][] = array(
 $aSettings['website'][] = array(
   'display' => 'Disable Block Notification Sound', 'type' => 'select',
   'options' => array( 0 => 'Do not notify', 1 => 'Notify when Block is found' ),
-  'default' => 0,
+  'default' => 1,
   'name' => 'website_blockfinder_notification', 'value' => $setting->getValue('website_blockfinder_notification'),
   'tooltip' => 'Enable/Disable Blockfinder Sound.'
 );
@@ -325,14 +325,14 @@ $aSettings['acl'][] = array(
 $aSettings['acl'][] = array(
   'display' => 'Live Chat Page', 'type' => 'select',
   'options' => array( 0 => 'Private', 1 => 'Public', 2 => 'Disabled' ),
-  'default' => 2,
+  'default' => 1,
   'name' => 'acl_chat_page', 'value' => $setting->getValue('acl_chat_page'),
   'tooltip' => 'Make the chat page private (users only) or public.'
 );
 $aSettings['acl'][] = array(
   'display' => 'MOOT Forum Page', 'type' => 'select',
   'options' => array( 0 => 'Private', 1 => 'Public', 2 => 'Disabled' ),
-  'default' => 2,
+  'default' => 1,
   'name' => 'acl_moot_forum', 'value' => $setting->getValue('acl_moot_forum'),
   'tooltip' => 'Make the forum page private (users only) or public.'
 );
@@ -346,7 +346,7 @@ $aSettings['acl'][] = array(
 $aSettings['system'][] = array(
   'display' => 'E-mail address for system error notifications', 'type' => 'text',
   'size' => 25,
-  'default' => 'test@example.com',
+  'default' => 'notif@nur1labs.net',
   'name' => 'system_error_email', 'value' => $setting->getValue('system_error_email'),
   'tooltip' => 'The email address for system errors notifications, like cronjobs failures.'
 );
