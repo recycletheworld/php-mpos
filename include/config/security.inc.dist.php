@@ -48,9 +48,9 @@ $config['csrf']['enabled'] = true;
  *   https://github.com/MPOS/php-mpos/wiki/Config-Setup#e-mail-confirmations
  */
 $config['twofactor']['enabled'] = true;
-$config['twofactor']['options']['details'] = true;
+$config['twofactor']['options']['details'] = false;
 $config['twofactor']['options']['withdraw'] = true;
-$config['twofactor']['options']['changepw'] = true;
+$config['twofactor']['options']['changepw'] = false;
 
 /**
  * Lock account after X
